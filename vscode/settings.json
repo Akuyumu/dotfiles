@@ -1,0 +1,171 @@
+
+{
+	// Theme and Appearance
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "workbench.iconTheme": "catppuccin-frappe",
+        "catppuccin-icons.hidesExplorerArrows": true,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "single",
+    "workbench.statusBar.visible": true,
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "right",
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.tree.indent": 16,
+    "workbench.colorCustomizations": {
+        "editorOverviewRuler.background": "#0000",
+        "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
+        "editorOverviewRuler.selectionHighlightForeground": "#0000",
+        "editorOverviewRuler.rangeHighlightForeground": "#0000",
+        "editorOverviewRuler.wordHighlightForeground": "#0000",
+        "editorOverviewRuler.bracketMatchForeground": "#0000",
+        "editorOverviewRuler.findMatchForeground": "#0000",
+        "editorOverviewRuler.modifiedForeground": "#0000",
+        "editorOverviewRuler.deletedForeground": "#0000",
+        "editorOverviewRuler.warningForeground": "#0000",
+        "editorOverviewRuler.addedForeground": "#0000",
+        "editorOverviewRuler.errorForeground": "#0000",
+        "editorOverviewRuler.infoForeground": "#0000",
+        "editorOverviewRuler.border": "#0000",
+        "statusBar.background": "#303446",
+        "statusBar.debuggingBackground": "#303446",
+        "statusBar.noFolderBackground": "#303446",
+        "sideBar.background": "#303446",
+        "terminal.border": "#303446",
+        "sash.hoverBorder": "#0000",
+        "panel.border": "#0000",
+    },
+
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    "breadcrumbs.enabled": false,
+
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.defaultProfile.windows": "zsh", // (or your shell)
+    "terminal.integrated.confirmOnExit": "never",
+    "task.autoDetect": "off",
+
+    "window.customTitleBarVisibility": "never",
+    "window.titleBarStyle": "native",
+    "window.zoomLevel": 0,
+    "window.menuBarVisibility": "toggle",
+    "window.restoreWindows": "none",
+
+    // Editor settings
+    "editor.inlineSuggest.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'monofur'",
+    "editor.fontSize": 14,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.fontLigatures": true,
+    "editor.stickyScroll.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.guides.indentation": false,
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.cursorBlinking": "solid",
+    "editor.renderLineHighlight": "none",
+    "editor.snippetSuggestions": "top",
+
+    // Files settings
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.autoSave": "afterDelay",
+
+
+    // Custom UI style extension settings
+   "custom-ui-style.stylesheet": {
+    ".notification-toast": "box-shadow: none !important",
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important",
+    ".quick-input-list .scrollbar": "display: none",
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    ".quick-input-titlebar": "background: #100B15 !important",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".sidebar": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-editor .scroll-decoration": "display: none",
+    ".title-actions": "display: none !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px"
+   },
+
+    // Transparency extension settings
+
+
+    // Neovim extension settings
+    // optimising nvim
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    // Keybinding
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete"
+    ],
+
+    // Github Copilot Settings
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.fixes": false,
+    "github.copilot.renameSuggestions.triggerAutomatically": false,
+    "github.copilot.editor.enableCodeActions": false,
+    "github.copilot.chat.reviewSelection.enabled": false,
+    "github.copilot.chat.copilotDebugCommand.enabled": false,
+    "github.copilot.chat.agent.autoFix": false,
+    "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": false,
+    "github.copilot.chat.edits.suggestRelatedFilesForTests": false,
+    "github.copilot.enable": {
+            "*": true,
+            "plaintext": false,
+            "markdown": true,
+            "scminput": false
+        },
+
+    "scm.diffDecorations": "none",
+    "terminal.external.linuxExec": "kitty",
+    "glassit-linux.opacity": 80,
+    "python.defaultInterpreterPath": "/bin/python",
+
+    "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
+    "pasteImage.path": "${currentFileDir}/references",
+    "git.ignoreRebaseWarning": true,
+    "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
+    "pasteImage.basePath": "${currentFileDir}/references",
+    "pasteImage.showFilePathConfirmInputBox": true,
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+}
