@@ -7,6 +7,7 @@
     "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "single",
     "workbench.statusBar.visible": true,
+    "workbench.layoutControl.type": "both",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "right",
     "workbench.tree.enableStickyScroll": false,
@@ -35,6 +36,8 @@
         "sash.hoverBorder": "#0000",
         "panel.border": "#0000",
     },
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.layoutControl.enabled": false,
 
     "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
@@ -43,15 +46,18 @@
     "breadcrumbs.enabled": false,
 
     "terminal.integrated.gpuAcceleration": "on",
-    "terminal.integrated.defaultProfile.windows": "zsh", // (or your shell)
+    "terminal.integrated.defaultProfile.windows": "PowerShell", // (or your shell)
     "terminal.integrated.confirmOnExit": "never",
     "task.autoDetect": "off",
 
-    "window.customTitleBarVisibility": "never",
-    "window.titleBarStyle": "native",
+    // Window settings
+    "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "hidden",
     "window.restoreWindows": "none",
+    "window.commandCenter": false,
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
 
     // Editor settings
     "editor.inlineSuggest.enabled": false,
@@ -69,6 +75,8 @@
     "editor.cursorBlinking": "solid",
     "editor.renderLineHighlight": "none",
     "editor.snippetSuggestions": "top",
+    "editor.renderControlCharacters": false,
+    "editor.wordWrap": "on",
 
     // Files settings
     "files.trimTrailingWhitespace": true,
@@ -76,67 +84,12 @@
     "files.autoSave": "afterDelay",
 
 
-    // Custom UI style extension settings
-   "custom-ui-style.stylesheet": {
-    ".notification-toast": "box-shadow: none !important",
-    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
-    ".quick-input-widget": "top: 25vh !important",
-    ".quick-input-list .scrollbar": "display: none",
-    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
-    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
-    ".quick-input-titlebar": "background: #100B15 !important",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
-    ".monaco-scrollable-element > .shadow.top": "display: none",
-    ".sidebar .title-label": "padding: 0 !important",
-    ".sidebar": "border: none !important",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-    ".monaco-list-row.focused": "outline: none !important",
-    ".monaco-editor .scroll-decoration": "display: none",
-    ".title-actions": "display: none !important",
-    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
-    ".title .monaco-icon-label:after": "margin-right: 0",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px"
-   },
+    // Git Settings
+    "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
+    "git.ignoreRebaseWarning": true,
+    "git.autofetch": true,
 
-    // Transparency extension settings
-
-
-    // Neovim extension settings
-    // optimising nvim
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    // Keybinding
-    "vscode-neovim.ctrlKeysForNormalMode": [
-        "a",
-        "c",
-        "d",
-        "e",
-        "f",
-        "h",
-        "i",
-        "j",
-        "k",
-        "l",
-        "m",
-        "o",
-        "r",
-        "t",
-        "u",
-        "v",
-        "w",
-        "x",
-        "y",
-        "z",
-        "/",
-        "]",
-        "right",
-        "left",
-        "up",
-        "down",
-        "backspace",
-        "delete"
-    ],
 
     // Github Copilot Settings
     "github.copilot.nextEditSuggestions.enabled": false,
@@ -156,16 +109,31 @@
         },
 
     "scm.diffDecorations": "none",
-    "terminal.external.linuxExec": "kitty",
-    "glassit-linux.opacity": 80,
-    "python.defaultInterpreterPath": "/bin/python",
 
-    "git.enableSmartCommit": true,
-    "git.openRepositoryInParentFolders": "always",
-    "pasteImage.path": "${currentFileDir}/references",
-    "git.ignoreRebaseWarning": true,
+    // Markdown settings
     "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
-    "pasteImage.basePath": "${currentFileDir}/references",
-    "pasteImage.showFilePathConfirmInputBox": true,
+    "markdown.copyFiles.destination": {
+        "**/*.md": "${documentDirName}/images/"
+    },
+
+    // Python / Terminal
     "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python.defaultInterpreterPath": "C:\\Users\\tp-phuad\\AppData\\Local\\Microsoft\\WindowsApps\\python3.13.exe",
+    "terminal.external.linuxExec": "kitty",
+    "terminal.integrated.fontSize": 13,
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+
+    // live server settings
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "remote.SSH.remotePlatform": {
+        "10.100.113.168": "linux",
+        "blueberrypi.local": "linux"
+    },
+    "python.createEnvironment.trigger": "off",
+    "redhat.telemetry.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
+
 }
